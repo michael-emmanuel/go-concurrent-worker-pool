@@ -1,0 +1,17 @@
+# Deliberately small: the default linters (errcheck, govet, ineffassign,
+# staticcheck, unused, gosimple) plus a few that catch real concurrency and
+# error-handling mistakes.
+run:
+  timeout: 5m
+linters:
+  enable:
+    - errorlint
+    - bodyclose
+    - noctx
+    - copyloopvar
+    - unconvert
+    - misspell
+issues:
+  exclude-rules:
+    - path: _test\.go
+      linters: [errcheck]
