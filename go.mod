@@ -1,3 +1,3 @@
-module github.com/example/concurrent-worker-pool
+module github.com/michael-emmanuel/concurrent-worker-pool
 
 go 1.22
