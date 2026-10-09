@@ -546,8 +546,8 @@ func (p *Pool) finalize() {
 	p.state = Stopped
 	p.mu.Unlock()
 	p.abort(context.Canceled) // release baseCtx; a no-op if already aborted
-	close(p.done)
 	p.log.Info("worker pool stopped", "stats", fmt.Sprintf("%+v", p.Stats()))
+	close(p.done)
 }
 
 // Stats returns a snapshot of the pool's counters and gauges.
