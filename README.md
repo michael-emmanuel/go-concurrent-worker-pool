@@ -135,7 +135,7 @@ Details and integration sketches for Prometheus and OpenTelemetry: [docs/observa
 ## Installation
 
 ```sh
-go get github.com/michael-emmanuel/concurrent-worker-pool
+go get github.com/michael-emmanuel/go-concurrent-worker-pool
 ```
 
 Replace the module path in `go.mod` with your own repository path before publishing. Requires Go 1.22 or newer. Verified with Go 1.22.2 and 1.24.13.
@@ -150,7 +150,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/example/concurrent-worker-pool/workerpool"
+    "github.com/michael-emmanuel/go-concurrent-worker-pool/workerpool"
 )
 
 func main() {

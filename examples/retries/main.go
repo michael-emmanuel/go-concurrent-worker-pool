@@ -11,7 +11,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/example/concurrent-worker-pool/workerpool"
+	"github.com/michael-emmanuel/go-concurrent-worker-pool/workerpool"
 )
 
 var errTemporary = errors.New("temporary upstream error")

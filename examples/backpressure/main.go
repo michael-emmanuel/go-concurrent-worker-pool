@@ -10,7 +10,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/example/concurrent-worker-pool/workerpool"
+	"github.com/michael-emmanuel/go-concurrent-worker-pool/workerpool"
 )
 
 func main() {

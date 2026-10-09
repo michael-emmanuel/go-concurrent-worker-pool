@@ -25,7 +25,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/example/concurrent-worker-pool/workerpool"
+	"github.com/michael-emmanuel/go-concurrent-worker-pool/workerpool"
 )
 
 // callDownstream stands in for an external API. It fails transiently on every
